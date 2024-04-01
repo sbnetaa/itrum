@@ -1,0 +1,21 @@
+databaseChangeLog:
+- changeSet:
+    id: 1711738301702-1
+    author: sbnet (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: wallets_pkey
+            name: uuid
+            type: UUID
+        - column:
+            constraints:
+              nullable: false
+            name: balance
+            type: BIGINT
+        tableName: wallets
+

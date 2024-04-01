@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    links:
+      - db
+    ports:
+      - "8050:8050"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_DRIVER: org.postgresql.Driver
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/itrum_db
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+      LIQUIBASE_CHANGELOG: classpath:db/changelog/changelog.yaml
+
+  db:
+    image: postgres:15
+    container_name: db_container
+    ports:
+      - "5432:5432"
+
+    environment:
+      POSTGRES_DB: itrum_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
