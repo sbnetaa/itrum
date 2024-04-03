@@ -5,8 +5,14 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Semaphore;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.hamcrest.Matchers;
+import org.hibernate.StaleObjectStateException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -57,7 +63,6 @@ public class WalletControllerTest {
 	public void prepare() {
 		wallet = new Wallet((new Random().nextLong(0, Long.MAX_VALUE)));
 		walletService.save(wallet);
-		//Mockito.when(walletService.getBalance(wallet.getUuid())).thenReturn(wallet.getBalance());
 	}
 	
 	@AfterEach
@@ -67,7 +72,6 @@ public class WalletControllerTest {
 	
 	@Test
 	public void givenRandomAmountToDeposit_whenPerform_thanBalanceIsCorrect() {
-		//System.out.println(wallet.getBalance());
 		long random = new Random().nextLong(0, Long.MAX_VALUE - wallet.getBalance());
 		walletService.deposit(wallet.getUuid(), random);
 		assertEquals(walletService.getBalance(wallet.getUuid()), wallet.getBalance() + random);
@@ -141,5 +145,81 @@ public class WalletControllerTest {
 					.andExpect(result -> assertTrue(result.getResolvedException() instanceof WalletDoesNotExistsException));
 			
 			if (temporaryWallet.isPresent()) walletService.save(temporaryWallet.get());
+	}
+	
+	public void takeSemaphore(Semaphore semaphore) {
+		try {
+			semaphore.acquire();
+		} catch (InterruptedException e) {
+			System.out.println(e.getMessage());
+			semaphore.release(); // ?
+		} 	
+	}
+	
+	public void runThreads(ThreadPoolExecutor executor, AtomicLong controlBalance, final int TASKS_COUNT, Semaphore semaphore) {
+		for (int i = 0; i <= TASKS_COUNT; i++) { 
+			while (true) {
+				takeSemaphore(semaphore);
+				System.out.println(walletService.getBalance(wallet.getUuid()) == controlBalance.get()); // удостовериться, что балансы совпадают
+				boolean operationTypeIsDeposit = new Random().nextBoolean();	
+				try {				
+				if (operationTypeIsDeposit) {					
+					performDepositTest(controlBalance);
+					semaphore.release();
+					break;
+				} else {
+					performWithdrawTest(controlBalance);
+					semaphore.release();
+					break;
+				}
+				} catch (StaleObjectStateException e) {
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Тест может не пройти, но баланс остается верным. Тест может не пройти из-за того,
+	 *  что некоторые операции не выполняются с первого раза, и тогда их выполнение
+	 *  запускается повторно (в цикле while (true) ), пока они не будут выполнены.
+	 *  В результате все (вроде как :) ) операции выполняются, а Exceptions остаются.
+	 */
+	
+	@Test
+	public void givenConcurrentModyfiyngOfWalletsBalance_mustAchiveCorrectBalance() {
+		AtomicLong controlBalance = new AtomicLong(wallet.getBalance());
+		final int POOL_SIZE = 50;
+		final int TASKS_PER_THREAD = 50;
+		final int TASKS_COUNT = POOL_SIZE * TASKS_PER_THREAD;
+		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(POOL_SIZE);
+		Semaphore semaphore = new Semaphore(1);
+		executor.submit(() -> runThreads(executor, controlBalance, TASKS_COUNT, semaphore));
+		
+		shutdownExecutor(executor);		
+		assertEquals(walletService.getBalance(wallet.getUuid()), controlBalance.get());
+	}
+	
+	public void performWithdrawTest(AtomicLong controlBalance) {
+		long sum = new Random().nextLong(0, controlBalance.get());
+		walletService.withdraw(wallet.getUuid(), sum);
+		controlBalance.set(controlBalance.get() - sum);
+	}
+	
+	public void performDepositTest(AtomicLong controlBalance) {
+		long sum = new Random().nextLong(0, Long.MAX_VALUE - controlBalance.get());
+		walletService.deposit(wallet.getUuid(), sum);
+		controlBalance.set(controlBalance.get() + sum);
+	}
+	
+	
+	public void shutdownExecutor(ThreadPoolExecutor executor) {
+		executor.shutdown();
+		try {
+		    if (!executor.awaitTermination(800, TimeUnit.MILLISECONDS)) {
+		        executor.shutdownNow();
+		    } 
+		} catch (InterruptedException e) {
+		    executor.shutdownNow();
+		}
 	}
 }

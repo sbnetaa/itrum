@@ -39,6 +39,7 @@ public class MvcConfig implements WebMvcConfigurer {
 		this.environment = environment;
 	}
 	
+	/*
 	@Bean
 	public DataSource dataSource() {
 	    DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -63,7 +64,7 @@ public class MvcConfig implements WebMvcConfigurer {
         }
         return liquibase;
     }
-	
+	*/
 	
    @Bean
    HiddenHttpMethodFilter hiddenHttpMethodFilter() {
