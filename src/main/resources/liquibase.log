@@ -1,0 +1,400 @@
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for directory C:\Users\sbnet\OneDrive\Рабочий стол\Проекты\itrumtesttask\itrumtesttask\itrumtesttask\src\main\resources
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.searchPath found
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\liquibase-core.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for directory C:\Program Files\liquibase\lib
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\commons-collections4.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\commons-lang3.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\commons-text.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\h2.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\hsqldb.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\jaxb-api.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\jaxb-core.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\jaxb-runtime.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\jaybird.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\jcc.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\liquibase-commercial.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\mariadb-java-client.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\mssql-jdbc.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\ojdbc8.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\opencsv.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\picocli.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\postgresql.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\snakeyaml.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\snowflake-jdbc.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for file C:\Program Files\liquibase\internal\lib\sqlite-jdbc.jar
+[2024-04-03 14:04:32] FINE [liquibase.resource] Creating resourceAccessor for directory C:\Program Files\liquibase\internal\lib
+[2024-04-03 14:04:32] FINE [liquibase.resource] Overall search path: 
+  - C:\Users\sbnet\OneDrive\Рабочий стол\Проекты\itrumtesttask\itrumtesttask\itrumtesttask\src\main\resources
+  - C:\Program Files\liquibase\internal\lib\liquibase-core.jar
+  - C:\Program Files\liquibase\lib
+  - C:\Program Files\liquibase\internal\lib\commons-collections4.jar
+  - C:\Program Files\liquibase\internal\lib\commons-lang3.jar
+  - C:\Program Files\liquibase\internal\lib\commons-text.jar
+  - C:\Program Files\liquibase\internal\lib\h2.jar
+  - C:\Program Files\liquibase\internal\lib\hsqldb.jar
+  - C:\Program Files\liquibase\internal\lib\jaxb-api.jar
+  - C:\Program Files\liquibase\internal\lib\jaxb-core.jar
+  - C:\Program Files\liquibase\internal\lib\jaxb-runtime.jar
+  - C:\Program Files\liquibase\internal\lib\jaybird.jar
+  - C:\Program Files\liquibase\internal\lib\jcc.jar
+  - C:\Program Files\liquibase\internal\lib\liquibase-commercial.jar
+  - C:\Program Files\liquibase\internal\lib\mariadb-java-client.jar
+  - C:\Program Files\liquibase\internal\lib\mssql-jdbc.jar
+  - C:\Program Files\liquibase\internal\lib\ojdbc8.jar
+  - C:\Program Files\liquibase\internal\lib\opencsv.jar
+  - C:\Program Files\liquibase\internal\lib\picocli.jar
+  - C:\Program Files\liquibase\internal\lib\postgresql.jar
+  - C:\Program Files\liquibase\internal\lib\snakeyaml.jar
+  - C:\Program Files\liquibase\internal\lib\snowflake-jdbc.jar
+  - C:\Program Files\liquibase\internal\lib\sqlite-jdbc.jar
+  - C:\Program Files\liquibase\internal\lib
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.uiService found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.uiService is using the default value of CONSOLE
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.mirrorConsoleMessagesToLog found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.mirrorConsoleMessagesToLog is using the default value of true
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.shouldRun aka should.run found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.shouldRun is using the default value of true
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.showBanner found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.showBanner is using the default value of true
+[2024-04-03 14:04:32] INFO [liquibase.ui] ####################################################
+##   _     _             _ _                      ##
+##  | |   (_)           (_) |                     ##
+##  | |    _  __ _ _   _ _| |__   __ _ ___  ___   ##
+##  | |   | |/ _` | | | | | '_ \ / _` / __|/ _ \  ##
+##  | |___| | (_| | |_| | | |_) | (_| \__ \  __/  ##
+##  \_____/_|\__, |\__,_|_|_.__/ \__,_|___/\___|  ##
+##              | |                               ##
+##              |_|                               ##
+##                                                ## 
+##  Get documentation at docs.liquibase.com       ##
+##  Get certified courses at learn.liquibase.com  ## 
+##                                                ##
+####################################################
+Starting Liquibase at 14:04:32 (version 4.27.0 #1525 built at 2024-03-25 17:08+0000)
+[2024-04-03 14:04:32] INFO [liquibase.ui] Liquibase Version: 4.27.0
+[2024-04-03 14:04:32] INFO [liquibase.ui] Liquibase Open Source 4.27.0 by Liquibase
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.monitorPerformance found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.monitorPerformance is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.integration] Performance monitoring disabled
+[2024-04-03 14:04:32] INFO [liquibase.integration] Starting command execution.
+[2024-04-03 14:04:32] FINE [liquibase.command] Found ProUpdateCommandStep override for UpdateCommandStep! Using ProUpdateCommandStep in pipeline.
+[2024-04-03 14:04:32] FINE [liquibase.command] Found ProChangeExecListenerCommandStep override for ChangeExecListenerCommandStep! Using ProChangeExecListenerCommandStep in pipeline.
+[2024-04-03 14:04:32] FINE [liquibase.command] Found ProChangeExecListenerCommandStep override for ChangeExecListenerCommandStep! Using ProChangeExecListenerCommandStep in pipeline.
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.outputFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.strict found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.strict is using the default value of false
+[2024-04-03 14:04:32] WARNING [liquibase.configuration] Potentially ignored key(s) in file exists at path liquibase.properties
+ - 'referenceUrl'
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.changeExecListener found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.changeExecListener found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.changeExecListenerClass found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.changeExecListenerClass found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.changeExecListenerPropertiesFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.changeExecListenerPropertiesFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.changelogFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.command.changelogFile' configuration of 'changelog.yaml'
+    command argument '--changelogFile' of 'changelog.yaml'
+    Overrides file exists at path liquibase.properties 'changeLogFile' of '@project.basedir@/src/main/resources/db/changelog/changelog.yaml'
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.changelogParameters found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.changelogParameters found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.contextFilter aka liquibase.command.update.contexts found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.contextFilter aka liquibase.command.contexts found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.database found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.database found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.databaseChangelog found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.databaseChangelog found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.defaultCatalogName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.defaultCatalogName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.defaultSchemaName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.defaultSchemaName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.driver found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.command.driver' configuration of 'org.postgresql.Driver'
+    file exists at path liquibase.properties 'driver' of 'org.postgresql.Driver'
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.driverPropertiesFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.driverPropertiesFile found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.labelFilter aka liquibase.command.update.labels found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.labelFilter aka liquibase.command.labels found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.password found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.command.password' configuration of '*****'
+    file exists at path liquibase.properties 'password' of '*****'
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.reportEnabled aka liquibase.command.update.reportsEnabled found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.reportEnabled aka liquibase.command.reportsEnabled found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.reportFormat aka liquibase.command.update.reportsFormat found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.reportFormat aka liquibase.command.reportsFormat found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.reportName aka liquibase.command.update.reportsName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.reportName aka liquibase.command.reportsName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.reportPath aka liquibase.command.update.reportsPath found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.reportPath aka liquibase.command.reportsPath found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.rollbackOnError found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.rollbackOnError is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.rollbackOnError found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.rollbackOnError is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.showSummary found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.showSummary found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.showSummary is using the default value of SUMMARY
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.showSummaryOutput found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.showSummaryOutput is using the default value of ALL
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.showSummaryOutput found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.showSummaryOutput is using the default value of ALL
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.skipDatabaseStep found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.skipDatabaseStep found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.skipDatabaseStep is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.updateNullChecksums found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.updateNullChecksums is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.updateNullChecksums found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.updateNullChecksums is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.url found
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.database.jvm.ConnectionPatterns instance liquibase.database.jvm.JdbcConnectionPatterns
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.command.url' configuration of 'jdbc:postgresql://localhost:5432/itrum_db'
+    file exists at path liquibase.properties 'url' of '*****'
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.command.update.username found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.command.username' configuration of 'postgres'
+    file exists at path liquibase.properties 'username' of 'postgres'
+[2024-04-03 14:04:32] FINE [liquibase.command] Pipeline for command 'update: liquibase.command.core.helpers.DbUrlConnectionArgumentsCommandStep then liquibase.command.core.helpers.ShowSummaryArgument then com.datical.liquibase.ext.command.helpers.RollbackOnErrorArgument then com.datical.liquibase.ext.command.helpers.VisibleReportCommandArguments then liquibase.command.core.helpers.DbUrlConnectionCommandStep then liquibase.command.core.helpers.DatabaseChangelogCommandStep then com.datical.liquibase.ext.command.helpers.ProChangeExecListenerCommandStep then com.datical.liquibase.ext.command.ProUpdateCommandStep
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.outputFileEncoding found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.outputFileEncoding is using the default value of UTF-8
+[2024-04-03 14:04:32] FINE [liquibase.command] Writing output with encoding 'UTF-8'
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command dbUrlConnectionArguments
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command showSummary
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.showSummary is using the default value of SUMMARY
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.showSummary is using the default value of SUMMARY
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.showSummaryOutput is using the default value of ALL
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.showSummaryOutput is using the default value of ALL
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command rollbackOnError
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.rollbackOnError is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.rollbackOnError is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command reportvisible
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.reports.enabled aka liquibase.report.enabled found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.reports.enabled is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.reports.name aka liquibase.report.name found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.reports.name is using the default value of report-dd-MMM-yyyy-HHmmss
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.reports.path aka liquibase.report.path found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.reports.path is using the default value of .
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.reports.format aka liquibase.report.format found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.reports.format is using the default value of HTML
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command dbUrlConnectionCommandStep
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.update.skipDatabaseStep is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.command.skipDatabaseStep is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Found 'liquibase.driver' configuration of 'org.postgresql.Driver'
+    file exists at path liquibase.properties 'driver' of 'org.postgresql.Driver'
+[2024-04-03 14:04:32] WARNING [liquibase.command] Ignoring the global liquibase.driver value in favor of the command value.
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.liquibaseCatalogName aka liquibase.catalogName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.liquibaseSchemaName aka liquibase.schemaName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.databaseClass found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.propertyProviderClass found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.liquibaseTablespaceName aka liquibase.databaseChangeLogTablespaceName aka liquibase.liquibaseTableSpaceName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.databaseChangelogLockTableName aka liquibase.databaseChangeLogLockTableName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.databaseChangelogLockTableName is using the default value of DATABASECHANGELOGLOCK
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.databaseChangelogTableName aka liquibase.databaseChangeLogTableName found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.databaseChangelogTableName is using the default value of DATABASECHANGELOG
+[2024-04-03 14:04:32] FINE [liquibase.database] Properties:
+[2024-04-03 14:04:32] FINE [liquibase.database] Key:'password' Value:'**********'
+[2024-04-03 14:04:32] FINE [liquibase.database] Key:'user' Value:'postgres'
+[2024-04-03 14:04:32] FINE [liquibase.database] Connecting to the URL:'jdbc:postgresql://localhost:5432/itrum_db' using driver:'org.postgresql.Driver'
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.database.DatabaseConnection instance liquibase.database.jvm.JdbcConnection
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.database.DatabaseConnection instance com.datical.liquibase.ext.database.jvm.ProJdbcConnection
+[2024-04-03 14:04:32] FINE [liquibase.database] Connection has been created
+[2024-04-03 14:04:32] FINE [liquibase.database] Connected to postgres@jdbc:postgresql://localhost:5432/itrum_db
+[2024-04-03 14:04:32] FINE [liquibase.database] Setting auto commit to false from true
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.preserveSchemaCase found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.preserveSchemaCase is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.command] Executing internal command changelogCommandStep
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.executor.Executor instance liquibase.executor.jvm.JdbcExecutor
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.executor.Executor instance liquibase.executor.jvm.SnowflakeJdbcExecutor
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.executor.Executor instance com.datical.liquibase.ext.tools.OracleSqlPlusExecutor
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.executor.Executor instance com.datical.liquibase.ext.tools.MssqlSqlcmdExecutor
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.executor.Executor instance com.datical.liquibase.ext.tools.PsqlExecutor
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorDB2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorHsqlH2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorMySQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddAutoIncrementGeneratorSQLite
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorDefaultClauseBeforeNotNull
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddColumnGeneratorSQLite
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorDerby
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMSSQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorMySQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorOracle
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorPostgres
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSQLite
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybase
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddDefaultValueGeneratorSybaseASA
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddForeignKeyConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddPrimaryKeyGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AddUniqueConstraintGeneratorTDS
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.AlterSequenceGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.BatchDmlExecutablePreparedStatementGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ClearDatabaseChangeLogTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CommentGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CopyRowsGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogLockTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateDatabaseChangeLogTableGeneratorSybase
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorFirebird
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateIndexGeneratorPostgres
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateProcedureGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateTableGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateViewGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DeleteGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropColumnGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropForeignKeyConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropIndexGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropPrimaryKeyGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropSequenceGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropUniqueConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropViewGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetNextChangeSetSequenceValueGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDB2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorDerby
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorFirebird
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorHsql
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorMSSQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorOracle
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorPostgres
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybase
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSybaseASA
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InitializeDatabaseChangeLogLockTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertDataChangeGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorDB2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorH2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorHsql
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorInformix
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMSSQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorMySQL
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorOracle
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorPostgres
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSQLite
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSybaseASA
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertSetGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.LockDatabaseChangeLogGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.MarkChangeSetRanGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ModifyDataTypeGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawParameterizedSqlGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RawSqlGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReindexGeneratorSQLite
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RemoveChangeSetRanStatusGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameColumnGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameSequenceGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.ReorganizeTableGeneratorDB2
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RuntimeGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SelectFromDatabaseChangeLogLockGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetNullableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetViewRemarksGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.StoredProcedureGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableIsEmptyGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TableRowCountGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.TagDatabaseGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UnlockDatabaseChangeLogGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateChangeSetChecksumGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateDataChangeGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.UpdateGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.CreateSequenceGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropDefaultValueGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.DropProcedureGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.InsertOrUpdateGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameTableGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.RenameViewGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetColumnRemarksGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.SetTableRemarksGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance liquibase.sqlgenerator.core.GetViewDefinitionGeneratorSnowflake
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.appdba.markunused.change.MarkUnusedGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.appdba.synonym.change.CreateSynonymGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.appdba.synonym.change.DropSynonymGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.sqlgenerator.InsertDatabaseChangeLogHistoryGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.sqlgenerator.CreateDatabaseChangeLogHistoryTableGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.sqlgenerator.SelectFromDatabaseChangeLogHistoryGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.databasepackage.change.DropPackageBodyGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.databasepackage.change.DropPackageGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.databasepackage.change.CreatePackageGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.databasepackage.change.CreatePackageBodyGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.function.change.DropFunctionGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.function.change.CreateFunctionGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.checkconstraint.change.DisableCheckConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.checkconstraint.change.DropCheckConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.checkconstraint.change.EnableCheckConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.checkconstraint.change.AddCheckConstraintGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.trigger.change.DropTriggerGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.trigger.change.RenameTriggerGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.trigger.change.CreateTriggerGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.trigger.change.EnableTriggerGenerator
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.sqlgenerator.SqlGenerator instance com.datical.liquibase.ext.storedlogic.trigger.change.DisableTriggerGenerator
+[2024-04-03 14:04:32] INFO [liquibase.database] Set default schema name to public
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.supportPropertyEscaping aka enableEscaping found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.supportPropertyEscaping is using the default value of false
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.formattedsql.FormattedSqlChangeLogParser
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.json.JsonChangeLogParser
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.sql.SqlChangeLogParser
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.validateXmlChangelogFiles found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.validateXmlChangelogFiles is using the default value of true
+[2024-04-03 14:04:32] FINE [liquibase.configuration] No configuration value for liquibase.secureParsing found
+[2024-04-03 14:04:32] FINE [liquibase.configuration] Configuration liquibase.secureParsing is using the default value of true
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.xml.XMLChangeLogSAXParser
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance liquibase.parser.core.yaml.YamlChangeLogParser
+[2024-04-03 14:04:32] FINE [liquibase.servicelocator] Loaded liquibase.parser.ChangeLogParser instance com.datical.liquibase.ext.parser.ProFormattedSqlChangeLogParser
+[2024-04-03 14:04:32] FINE [liquibase.parser] Matched file 'changelog.yaml' to parser 'YamlChangeLogParser'
+[2024-04-03 14:04:32] FINE [liquibase.resource] Path changelog.yaml in C:\Users\sbnet\OneDrive\Рабочий стол\Проекты\itrumtesttask\itrumtesttask\itrumtesttask\src\main\resources does not exist (liquibase.resource.DirectoryResourceAccessor (C:\Users\sbnet\OneDrive\Рабочий стол\Проекты\itrumtesttask\itrumtesttask\itrumtesttask\src\main\resources))
+[2024-04-03 14:04:32] INFO [liquibase.command] Logging exception.
+[2024-04-03 14:04:32] INFO [liquibase.ui] ERROR: Exception Details
+[2024-04-03 14:04:32] INFO [liquibase.ui] ERROR: Exception Primary Class:  ChangeLogParseException
+[2024-04-03 14:04:32] INFO [liquibase.ui] ERROR: Exception Primary Reason:  changelog.yaml does not exist
+[2024-04-03 14:04:32] INFO [liquibase.ui] ERROR: Exception Primary Source:  4.27.0
+[2024-04-03 14:04:32] INFO [liquibase.command] Command execution complete
+[2024-04-03 14:04:32] SEVERE [liquibase.integration] changelog.yaml does not exist
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: changelog.yaml does not exist
+	at liquibase.command.CommandScope.execute(CommandScope.java:257)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:55)
+	at liquibase.integration.commandline.CommandRunner.call(CommandRunner.java:24)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:2041)
+	at picocli.CommandLine.access$1500(CommandLine.java:148)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2461)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2453)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2415)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2273)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2417)
+	at picocli.CommandLine.execute(CommandLine.java:2170)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$2(LiquibaseCommandLine.java:395)
+	at liquibase.Scope.child(Scope.java:199)
+	at liquibase.Scope.child(Scope.java:175)
+	at liquibase.integration.commandline.LiquibaseCommandLine.lambda$execute$3(LiquibaseCommandLine.java:370)
+	at liquibase.Scope.child(Scope.java:199)
+	at liquibase.Scope.child(Scope.java:175)
+	at liquibase.integration.commandline.LiquibaseCommandLine.execute(LiquibaseCommandLine.java:367)
+	at liquibase.integration.commandline.LiquibaseCommandLine.main(LiquibaseCommandLine.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at liquibase.integration.commandline.LiquibaseLauncher.main(LiquibaseLauncher.java:116)
+Caused by: liquibase.exception.ChangeLogParseException: changelog.yaml does not exist
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:35)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:129)
+	at liquibase.Scope.child(Scope.java:199)
+	at liquibase.Scope.child(Scope.java:175)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:128)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:87)
+	at liquibase.command.CommandScope.execute(CommandScope.java:219)
+	... 21 more
+
+[2024-04-03 14:04:32] INFO [liquibase.ui] Logs saved to liquibase.log

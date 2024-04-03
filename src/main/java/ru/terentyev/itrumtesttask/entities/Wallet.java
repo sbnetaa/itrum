@@ -17,8 +17,9 @@ public class Wallet {
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
 	private UUID uuid;
-	@Version
 	private long balance;
+	@Version
+	private long version;
 	
 	public Wallet(){}
 	
@@ -45,11 +46,23 @@ public class Wallet {
 	public void setBalance(long balance) {
 		this.balance = balance;
 	}
+	
+	
+
+	public long getVersion() {
+		return version;
+	}
+
+	public void setVersion(long version) {
+		this.version = version;
+	}
+
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(balance, uuid);
+		return Objects.hash(balance, uuid, version);
 	}
+
 
 	@Override
 	public boolean equals(Object obj) {
@@ -60,13 +73,14 @@ public class Wallet {
 		if (getClass() != obj.getClass())
 			return false;
 		Wallet other = (Wallet) obj;
-		return balance == other.balance && Objects.equals(uuid, other.uuid);
+		return balance == other.balance && Objects.equals(uuid, other.uuid) && version == other.version;
 	}
+
 
 	@Override
 	public String toString() {
-		return "Wallet [uuid=" + uuid + ", balance=" + balance + "]";
+		return "Wallet [uuid=" + uuid + ", balance=" + balance + ", version=" + version + "]";
 	}
 
-
+	
 }

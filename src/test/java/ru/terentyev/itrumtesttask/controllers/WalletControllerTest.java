@@ -1,15 +1,19 @@
 package ru.terentyev.itrumtesttask.controllers;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Stream;
 
 import org.hamcrest.Matchers;
 import org.hibernate.StaleObjectStateException;
@@ -20,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.orm.ObjectOptimisticLockingFailureException;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -48,6 +53,7 @@ public class WalletControllerTest {
 	private Wallet wallet;
 	private MockMvc mockMvc;
 	private ObjectMapper objectMapper;
+	private List<Exception> exceptions;
 	
 	@Autowired
 	public WalletControllerTest(WalletController walletController, WalletService walletService, MockMvc mockMvc
@@ -147,79 +153,34 @@ public class WalletControllerTest {
 			if (temporaryWallet.isPresent()) walletService.save(temporaryWallet.get());
 	}
 	
-	public void takeSemaphore(Semaphore semaphore) {
-		try {
-			semaphore.acquire();
-		} catch (InterruptedException e) {
-			System.out.println(e.getMessage());
-			semaphore.release(); // ?
-		} 	
-	}
-	
-	public void runThreads(ThreadPoolExecutor executor, AtomicLong controlBalance, final int TASKS_COUNT, Semaphore semaphore) {
-		for (int i = 0; i <= TASKS_COUNT; i++) { 
-			while (true) {
-				takeSemaphore(semaphore);
-				System.out.println(walletService.getBalance(wallet.getUuid()) == controlBalance.get()); // удостовериться, что балансы совпадают
-				boolean operationTypeIsDeposit = new Random().nextBoolean();	
-				try {				
-				if (operationTypeIsDeposit) {					
-					performDepositTest(controlBalance);
-					semaphore.release();
-					break;
-				} else {
-					performWithdrawTest(controlBalance);
-					semaphore.release();
-					break;
-				}
-				} catch (StaleObjectStateException e) {
-				}
-			}
-		}
-	}
-	
-	/**
-	 * Тест может не пройти, но баланс остается верным. Тест может не пройти из-за того,
-	 *  что некоторые операции не выполняются с первого раза, и тогда их выполнение
-	 *  запускается повторно (в цикле while (true) ), пока они не будут выполнены.
-	 *  В результате все (вроде как :) ) операции выполняются, а Exceptions остаются.
-	 */
-	
 	@Test
-	public void givenConcurrentModyfiyngOfWalletsBalance_mustAchiveCorrectBalance() {
-		AtomicLong controlBalance = new AtomicLong(wallet.getBalance());
-		final int POOL_SIZE = 50;
-		final int TASKS_PER_THREAD = 50;
-		final int TASKS_COUNT = POOL_SIZE * TASKS_PER_THREAD;
-		ThreadPoolExecutor executor = (ThreadPoolExecutor) Executors.newFixedThreadPool(POOL_SIZE);
-		Semaphore semaphore = new Semaphore(1);
-		executor.submit(() -> runThreads(executor, controlBalance, TASKS_COUNT, semaphore));
-		
-		shutdownExecutor(executor);		
-		assertEquals(walletService.getBalance(wallet.getUuid()), controlBalance.get());
-	}
-	
-	public void performWithdrawTest(AtomicLong controlBalance) {
-		long sum = new Random().nextLong(0, controlBalance.get());
-		walletService.withdraw(wallet.getUuid(), sum);
-		controlBalance.set(controlBalance.get() - sum);
-	}
-	
-	public void performDepositTest(AtomicLong controlBalance) {
-		long sum = new Random().nextLong(0, Long.MAX_VALUE - controlBalance.get());
-		walletService.deposit(wallet.getUuid(), sum);
-		controlBalance.set(controlBalance.get() + sum);
-	}
-	
-	
-	public void shutdownExecutor(ThreadPoolExecutor executor) {
-		executor.shutdown();
-		try {
-		    if (!executor.awaitTermination(800, TimeUnit.MILLISECONDS)) {
-		        executor.shutdownNow();
-		    } 
-		} catch (InterruptedException e) {
-		    executor.shutdownNow();
-		}
+	public void givenConcurrentModyfiyngOfWalletsBalance_mustAchiveCorrectBalance() throws InterruptedException {
+		 wallet.setBalance(0);
+		 walletService.save(wallet);
+		 Map<String, String> request = new HashMap<>();
+		 request.put("walletid", String.valueOf(wallet.getUuid()));
+		 request.put("operationType", "DEPOSIT");
+		 request.put("amount", "1");
+		 final int NUM_THREADS = 100;
+		 CountDownLatch latch = new CountDownLatch(NUM_THREADS);
+		 
+		 Stream.generate(() -> new Thread(() -> {
+			try {
+				mockMvc.perform(MockMvcRequestBuilders.post("/api/v1/wallet")
+					.contentType(MediaType.APPLICATION_JSON_VALUE).accept(MediaType.APPLICATION_JSON_VALUE)
+					.characterEncoding("utf-8")
+					.content(objectMapper.writeValueAsString(request)));
+					latch.countDown();
+			} catch (JsonProcessingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}})).limit(NUM_THREADS).forEach(Thread::start);
+				
+		 		latch.await();
+				assertEquals(100, walletService.getBalance(wallet.getUuid()));
+				
 	}
 }
